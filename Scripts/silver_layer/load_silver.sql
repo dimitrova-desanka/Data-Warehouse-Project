@@ -187,6 +187,10 @@ BEGIN
 		SELECT
 		prd_id,
 		prd_key AS prd_key_original,
+		REPLACE(SUBSTRING(prd_key,1,5), '-', '_')
+			AS prd_category_id,
+		TRIM(SUBSTRING(prd_key,7,LEN(prd_key))) 
+			AS prd_key_extracted,
 		CASE UPPER(TRIM(prd_line))
 			 WHEN 'M' THEN 'Mountain'
 		 	 WHEN 'R' THEN 'Road'
@@ -194,10 +198,6 @@ BEGIN
 		 	 WHEN 'T' THEN 'Touring'
 		 	 ELSE 'n/a'
 			 END AS prd_line,
-		REPLACE(SUBSTRING(prd_key,1,5), '-', '_')
-			AS prd_category_id,
-		TRIM(SUBSTRING(prd_key,7,LEN(prd_key))) 
-			AS prd_key_extracted,
 		prd_name,
 		ISNULL(prd_cost,0) AS prd_cost,
 		prd_start_date,
