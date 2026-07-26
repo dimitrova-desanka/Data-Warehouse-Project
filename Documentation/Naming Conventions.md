@@ -1,4 +1,3 @@
-(copied entirely from the project and fact-checked too)------------------------
 # 🎠 **Naming Conventions**
 
 This document outlines the naming conventions used for schemas, tables, views, columns, stored procedures, and other objects in the data warehouse.
