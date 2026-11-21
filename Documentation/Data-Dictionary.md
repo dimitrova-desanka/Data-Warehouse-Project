@@ -38,7 +38,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | product_category            | NVARCHAR(50)  | The broader classification of the product (e.g. 'Bikes', 'Components') to group related items.  |
 | product_subcategory         | NVARCHAR(50)  | A more detailed classification of the product within the category, such as product type.      |
 | product_line        | NVARCHAR(50)  | The specific product line or series to which the product belongs (e.g. 'Road', 'Mountain').      |
-| product_cost                | INT           | The cost or base price of the product, measured in monetary units.                            |
+| product_cost                | INT           | The cost or base price of the product, measured in whole monetary units.                            |
 | product_maintenance         | NVARCHAR(50)  | Indicates whether the product requires maintenance (e.g. 'Yes', 'No').                       |
 | product_start_date          | DATE          | The date when the product became available for sale or use. |
 | product_end_date          | DATE          | The last date of the validity period for the product record, e.g. due to a change in product_cost. NULL indicates that this is the most current record for the product. |
@@ -58,5 +58,5 @@ The Gold Layer is the business-level data representation, structured to support 
 | sales_shipping_date   | DATE          | The date when the order was shipped to the customer.                                          |
 | sales_due_date        | DATE          | The date when the order payment was due.                                                      |
 | quantity        | INT           | The number of units of the product ordered for the line item (e.g. 1).                       |
-| price           | INT           | The price per unit of the product for the line item, in monetary units (e.g. 3375).      |
-| sales_amount    | INT           | The total monetary value of the sale for the line item, in monetary units (e.g., 3375). Result of multiplying quantity and price.  |
+| price           | INT           | The price per unit of the product for the line item, in whole monetary units (e.g. 3375).      |
+| sales_amount    | INT           | The total monetary value of the sale for the line item, in whole monetary units (e.g. 3375). Result of multiplying quantity and price.  |
