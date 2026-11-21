@@ -32,7 +32,7 @@ The Gold Layer is the business-level data representation, structured to support 
 |---------------------|---------------|-----------------------------------------------------------------------------------------------|
 | product_surrogate_key         | BIGINT           | Surrogate key uniquely identifying each product record in the product dimension table.         |
 | product_id          | INT           | Unique numerical identifier assigned to each product.            |
-| product_code      | NVARCHAR(50)  | Structured alphanumeric code representing the product, reflecting key product characteristics such as category, color, and size (e.g. 'BK-M82B-38'. |
+| product_code      | NVARCHAR(50)  | Structured alphanumeric code representing the product, reflecting key product characteristics such as category, color, and size (e.g. 'BK-M82B-38'). |
 | product_name        | NVARCHAR(50)  | Descriptive name of the product, including key product characteristics such as category, color, and size (e.g. 'Mountain-100 Black- 38').         |
 | product_category_id         | NVARCHAR(50)  | Unique identifier for the product's category, linking to its high-level classification.     |
 | product_category            | NVARCHAR(50)  | The broader classification of the product (e.g. 'Bikes', 'Components') to group related items.  |
