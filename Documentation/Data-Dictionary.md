@@ -40,7 +40,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | product_line        | NVARCHAR(50)  | The specific product line or series to which the product belongs (e.g. 'Road', 'Mountain').      |
 | product_maintenance         | NVARCHAR(50)  | Indicates whether the product requires maintenance (e.g. 'Yes', 'No').                       |
 | product_cost                | INT           | The cost or base price of the product, measured in monetary units.                            |
-| product_start_date          | DATE          | The date when the product became available for sale or use, recorded in the system. |
+| product_start_date          | DATE          | The date when the product became available for sale or use. |
 
 ---
 
