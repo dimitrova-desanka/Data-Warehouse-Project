@@ -51,7 +51,7 @@ The Gold Layer is the business-level data representation, structured to support 
 
 | Column Name     | Data Type     | Description                                                                                   |
 |-----------------|---------------|-----------------------------------------------------------------------------------------------|
-| sales_order_number    | NVARCHAR(50)  | Unique alphanumeric identifier for each sales order (e.g. 'SO43698').                      |
+| sales_order_number    | NVARCHAR(50)  | Unique alphanumeric identifier for each sales order (e.g. 'SO43738').                      |
 | customer_surrogate_key    | BIGINT           | Surrogate key linking the order to the customer dimension table.                              |
 | product_surrogate_key     | BIGINT           | Surrogate key linking the order to the product dimension table.                               |
 | sales_order_date      | DATE          | The date when the order was placed.                                                           |
