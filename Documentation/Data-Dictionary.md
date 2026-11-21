@@ -19,7 +19,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | customer_country          | NVARCHAR(50)  | The country of residence for the customer (e.g. 'Australia').                               |
 | customer_birth_date        | DATE          | The date of birth of the customer, formatted as YYYY-MM-DD (e.g. 1971-10-06).               |
 | customer_marital_status   | NVARCHAR(50)  | The marital status of the customer (e.g. 'Married', 'Single').                              |
-| customer_gender_newer           | NVARCHAR(50)  | The gender of the customer (e.g. 'Male', 'Female', 'n/a').                                  |
+| customer_gender           | NVARCHAR(50)  | The gender of the customer (e.g. 'Male', 'Female', 'n/a').                                  |
 | customer_create_date      | DATE          | The date and time when the customer record was created in the system. |
 
 ---
@@ -38,8 +38,8 @@ The Gold Layer is the business-level data representation, structured to support 
 | product_category            | NVARCHAR(50)  | The broader classification of the product (e.g. 'Bikes', 'Components') to group related items.  |
 | product_subcategory         | NVARCHAR(50)  | A more detailed classification of the product within the category, such as product type.      |
 | product_line        | NVARCHAR(50)  | The specific product line or series to which the product belongs (e.g. 'Road', 'Mountain').      |
-| product_maintenance         | NVARCHAR(50)  | Indicates whether the product requires maintenance (e.g. 'Yes', 'No').                       |
 | product_cost                | INT           | The cost or base price of the product, measured in monetary units.                            |
+| product_maintenance         | NVARCHAR(50)  | Indicates whether the product requires maintenance (e.g. 'Yes', 'No').                       |
 | product_start_date          | DATE          | The date when the product became available for sale or use. |
 
 ---
