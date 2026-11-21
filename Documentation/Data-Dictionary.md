@@ -58,5 +58,5 @@ The Gold Layer is the business-level data representation, structured to support 
 | sales_shipping_date   | DATE          | The date when the order was shipped to the customer.                                          |
 | sales_due_date        | DATE          | The date when the order payment was due.                                                      |
 | quantity        | INT           | The number of units of the product ordered for the line item (e.g. 1).                       |
-| price           | INT           | The price per unit of the product for the line item, in whole currency units (e.g. 3375).      |
-| sales_amount    | INT           | The total monetary value of the sale for the line item, in whole currency units (e.g., 3375). Result of multiplying quantity and price.  |
+| price           | INT           | The price per unit of the product for the line item, in monetary units (e.g. 3375).      |
+| sales_amount    | INT           | The total monetary value of the sale for the line item, in monetary units (e.g., 3375). Result of multiplying quantity and price.  |
