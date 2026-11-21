@@ -31,10 +31,10 @@ The Gold Layer is the business-level data representation, structured to support 
 | Column Name         | Data Type     | Description                                                                                   |
 |---------------------|---------------|-----------------------------------------------------------------------------------------------|
 | product_surrogate_key         | BIGINT           | Surrogate key uniquely identifying each product record in the product dimension table.         |
-| product_id          | INT           | A unique identifier assigned to the product for internal tracking and referencing.            |
-| product_code      | NVARCHAR(50)  | A structured alphanumeric code representing the product, often used for categorization or inventory. |
+| product_id          | INT           | Unique numerical identifier assigned to each product.            |
+| product_code      | NVARCHAR(50)  | Structured alphanumeric identifier representing the product, often used for categorization or inventory. |
 | product_name        | NVARCHAR(50)  | Descriptive name of the product, including key details such as type, color, and size.         |
-| product_category_id         | NVARCHAR(50)  | A unique identifier for the product's category, linking to its high-level classification.     |
+| product_category_id         | NVARCHAR(50)  | Unique identifier for the product's category, linking to its high-level classification.     |
 | product_category            | NVARCHAR(50)  | The broader classification of the product (e.g. 'Bikes', 'Components') to group related items.  |
 | product_subcategory         | NVARCHAR(50)  | A more detailed classification of the product within the category, such as product type.      |
 | product_line        | NVARCHAR(50)  | The specific product line or series to which the product belongs (e.g. 'Road', 'Mountain').      |
@@ -50,7 +50,7 @@ The Gold Layer is the business-level data representation, structured to support 
 
 | Column Name     | Data Type     | Description                                                                                   |
 |-----------------|---------------|-----------------------------------------------------------------------------------------------|
-| sales_order_number    | NVARCHAR(50)  | A unique alphanumeric identifier for each sales order (e.g. 'SO54496').                      |
+| sales_order_number    | NVARCHAR(50)  | Unique alphanumeric identifier for each sales order (e.g. 'SO54496').                      |
 | customer_surrogate_key    | BIGINT           | Surrogate key linking the order to the customer dimension table.                              |
 | product_surrogate_key     | BIGINT           | Surrogate key linking the order to the product dimension table.                               |
 | sales_order_date      | DATE          | The date when the order was placed.                                                           |
