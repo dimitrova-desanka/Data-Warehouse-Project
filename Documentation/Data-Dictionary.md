@@ -41,7 +41,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | product_cost                | INT           | The cost or base price of the product, measured in monetary units.                            |
 | product_maintenance         | NVARCHAR(50)  | Indicates whether the product requires maintenance (e.g. 'Yes', 'No').                       |
 | product_start_date          | DATE          | The date when the product became available for sale or use. |
-| product_end_date          | DATE          | The date when the product . |
+| product_end_date          | DATE          | The last date of the validity period of the product record, e.g. due to a change in product_cost. |
 
 ---
 
