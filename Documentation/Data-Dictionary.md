@@ -13,7 +13,7 @@ The Gold Layer is the business-level data representation, structured to support 
 |------------------|---------------|-----------------------------------------------------------------------------------------------|
 | customer_surrogate_key     | BIGINT           | Surrogate key uniquely identifying each customer record in the customer dimension table.               |
 | customer_id      | INT           | Unique numerical identifier assigned to each customer.                                        |
-| customer_code  | NVARCHAR(50)  | Alphanumeric identifier representing the customer, used for tracking and referencing (e.g. 'AW00011045').         |
+| customer_code  | NVARCHAR(50)  | Alphanumeric identifier representing the customer, consisting of a fixed prefix followed by the customer_id (e.g. 'AW00011045').         |
 | customer_first_name       | NVARCHAR(50)  | The customer's first name, as recorded in the system.                                         |
 | customer_last_name        | NVARCHAR(50)  | The customer's last name or family name.                                                     |
 | customer_country          | NVARCHAR(50)  | The country of residence for the customer (e.g. 'Australia').                               |
@@ -32,8 +32,8 @@ The Gold Layer is the business-level data representation, structured to support 
 |---------------------|---------------|-----------------------------------------------------------------------------------------------|
 | product_surrogate_key         | BIGINT           | Surrogate key uniquely identifying each product record in the product dimension table.         |
 | product_id          | INT           | Unique numerical identifier assigned to each product.            |
-| product_code      | NVARCHAR(50)  | Structured alphanumeric identifier representing the product, often used for categorization or inventory (e.g. 'BK-M82B-38'. |
-| product_name        | NVARCHAR(50)  | Descriptive name of the product, including key details such as type, color, and size.         |
+| product_code      | NVARCHAR(50)  | Structured alphanumeric code representing the product, reflecting key product characteristics such as type, color, and size, often used for categorization or inventory (e.g. 'BK-M82B-38'. |
+| product_name        | NVARCHAR(50)  | Descriptive name of the product, including key product details such as type, color, and size.         |
 | product_category_id         | NVARCHAR(50)  | Unique identifier for the product's category, linking to its high-level classification.     |
 | product_category            | NVARCHAR(50)  | The broader classification of the product (e.g. 'Bikes', 'Components') to group related items.  |
 | product_subcategory         | NVARCHAR(50)  | A more detailed classification of the product within the category, such as product type.      |
